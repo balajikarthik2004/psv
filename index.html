@@ -6,6 +6,7 @@
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <title>P.S.V College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -46,43 +47,45 @@
         <button class="next-btn" onclick="nextSlide()">&#10095;</button>
     </div>
 
-       <!-- Scrolling Names Section -->
-       <div class="scrolling-container">
-        <div class="dept-header">
-            Head of the Department <br>
-            <span>Dr. S. CHANDRA SEKARAN <br> M.E., Ph.D.,</span>
-        </div>
-        <div class="name-scroller">
-            <!-- First set of names -->
-            <div class="name">Prof. C. PRAKASH NARAYANAN M.E., (AP)</div>
-            <div class="name">Prof. B. NEELU, M.E., (AP)</div>
-            <div class="name">Prof. D. GANDHIMATHI, M.Ε., (AP)</div>
-            <div class="name">Prof. K. NANDINI, M.E., (AP)</div>
-            <div class="name">Prof. R. MONISHA, M.E., (AP)</div>
-            <div class="name">Prof. D. ANITHA, M.Ε., (AP)</div>
-            <div class="name">Prof. A. NISHANTHI, Μ.Ε., (AP)</div>
-            <div class="name">Prof. G. DEEPA, Μ.Ε., (AP)</div>
-            <div class="name">Prof. T. JANSIRANI, M.E., (AP)</div>
-            <div class="name">Mr. S. RAVIKUMAR SYSTEM ADMIN/CSE</div>
-            <div class="name">Ms. K. KAVITHA Lab Assistant/CSE</div>
-            <!-- Duplicate the names to create a seamless loop -->
-            <div class="name">Prof. C. PRAKASH NARAYANAN M.E., (AP)</div>
-            <div class="name">Prof. B. NEELU, M.E., (AP)</div>
-            <div class="name">Prof. D. GANDHIMATHI, M.Ε., (AP)</div>
-            <div class="name">Prof. K. NANDINI, M.E., (AP)</div>
-            <div class="name">Prof. R. MONISHA, M.E., (AP)</div>
-            <div class="name">Prof. D. ANITHA, M.Ε., (AP)</div>
-            <div class="name">Prof. A. NISHANTHI, Μ.Ε., (AP)</div>
-            <div class="name">Prof. G. DEEPA, Μ.Ε., (AP)</div>
-            <div class="name">Prof. T. JANSIRANI, M.E., (AP)</div>
-            <div class="name">Mr. S. RAVIKUMAR SYSTEM ADMIN/CSE</div>
-            <div class="name">Ms. K. KAVITHA Lab Assistant/CSE</div>
-        </div>
+  <!-- Scrolling Names Section -->
+<div class="scrolling-container">
+    <div class="dept-header">
+        <h1></h1>Head of the Department <br> </h1>
+        <span>Dr. S. CHANDRA SEKARAN <br> M.E., Ph.D.,</span>
     </div>
+
+    <!-- Marquee for Scrolling Names -->
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        <!-- Names of Professors and Staff -->
+        <div class="name">Mr C. PRAKASH NARAYANAN M.E., (AP)</div>
+        <div class="name">Mrs B. NEELU, M.E., (AP)</div>
+        <div class="name">Mrs D. GANDHIMATHI, M.Ε., (AP)</div>
+        <div class="name">Mrs K. NANDINI, M.E., (AP)</div>
+        <div class="name">Mrs R. MONISHA, M.E., (AP)</div>
+        <div class="name">Mrs D. ANITHA, M.Ε., (AP)</div>
+        <div class="name">Mrs A. NISHANTHI, Μ.Ε., (AP)</div>
+        <div class="name">Mrs G. DEEPA, Μ.Ε., (AP)</div>
+        <div class="name">Mrs T. JANSIRANI, M.E., (AP)</div>
+        <div class="name">Mr S. RAVIKUMAR SYSTEM ADMIN/CSE</div>
+        <div class="name">Mrs. K. KAVITHA Lab Assistant/CSE</div>
+        <!-- Duplicate for continuous scrolling -->
+        <div class="name">Prof. C. PRAKASH NARAYANAN M.E., (AP)</div>
+        <div class="name">Prof. B. NEELU, M.E., (AP)</div>
+        <div class="name">Prof. D. GANDHIMATHI, M.Ε., (AP)</div>
+        <div class="name">Prof. K. NANDINI, M.E., (AP)</div>
+        <div class="name">Prof. R. MONISHA, M.E., (AP)</div>
+        <div class="name">Prof. D. ANITHA, M.Ε., (AP)</div>
+        <div class="name">Prof. A. NISHANTHI, Μ.Ε., (AP)</div>
+        <div class="name">Prof. G. DEEPA, Μ.Ε., (AP)</div>
+        <div class="name">Prof. T. JANSIRANI, M.E., (AP)</div>
+        <div class="name">Mr. S. RAVIKUMAR SYSTEM ADMIN/CSE</div>
+        <div class="name">Ms. K. KAVITHA Lab Assistant/CSE</div>
+    </marquee>
+</div>
+
 
     <section>
         <h1>Welcome to <br>Department of Computer Science and Engineering</h1>
-        <p>We have consistently demonstrated a profound dedication to academic innovation, cultivating a culture of inclusivity, and empowering students to realize their full potential.</p>
     </section>
 
     <!-- Vision and Mission Section -->
@@ -108,7 +111,9 @@
                 </div>
                 <div class="content">
                     <h3>Mission</h3>
-                    <p>Imparting professional skills through continuous education. Developing knowledge in innovative technologies through core research in computer science. Producing successful, self-reliant graduates with a commitment to lifelong learning and ethical values. Nurturing leadership abilities and technical acumen in every student.</p>
+                    <ul>
+                    <li>Imparting professional skills through continuous education. 
+                       </li> <li>Developing knowledge in innovative technologies through core research in computer science.</li>  <li>Producing successful, self-reliant graduates with a commitment to lifelong learning and ethical values. </li><li> Nurturing leadership abilities and technical acumen in every student.</li></ul>
                 </div>
             </div>
         </div>
@@ -139,10 +144,44 @@
             </div>
         </div>
     </section>
+    <div class="hr"></div>
+
+     <!-- Contact Section -->
+     <section class="contact-section">
+        <!-- Column 1: Logo and Social Media -->
+        <div class="contact-column1">
+            <img src="images/logo.png" alt="College Logo" class="college-logo">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Column 2: Contact Information -->
+        <div class="contact-column">
+            <h3>Connect With Us</h3>
+            <p><i class="fas fa-user"></i> Principal: 8838428106, 9444273966</p>
+            <p><i class="fas fa-phone"></i> For New Admissions: 8838428106, 9444273966, 6369342733</p>
+            <p><i class="fas fa-phone"></i> Office: +91 94444 94360</p>
+            <p><i class="fas fa-envelope"></i> selvam.psv@gmail.com, principal@psvcet.ac.in</p>
+            <p><i class="fas fa-map-marker-alt"></i> Mittapalli, Balinayanapalli (PO), Elathagiri (SO),<br> Krishnagiri District, Tamil Nadu, India - 635 108</p>
+        </div>
+
+        <!-- Column 3: Department Information -->
+        <div class="contact-column">
+            <h3>Department of Computer Science & Engineering</h3>
+            <p><i class="fas fa-user-tie"></i> Head of Department: Dr. S. Chandra Sekaran</p>
+            <p><i class="fas fa-phone"></i> Department Office: +91 94430 57461</p>
+            <p><i class="fas fa-envelope"></i> csedept@psvcet.ac.in</p>
+            <p><i class="fas fa-map-marker-alt"></i> P.S.V College, Main Building, Floor 2</p>
+        </div>
+    </section>
 
     <footer class="footer">
         <p>&copy; 2024 P.S.V College of Engineering & Technology. All Rights Reserved. </p>
-            <p>Developed by BALAJI</p>
+            <p>Developed by <a href="https://www.linkedin.com/in/balaji-k-894031258" target="_blank">BALAJI</a> </p>
     </footer>
 
     <script src="script.js"></script>
