@@ -12,20 +12,20 @@ const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
 function showSlide(index) {
-    // Calculate the offset based on the index
-    const offset = -index * 100;
-    document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+    const slider = document.querySelector('.slider');
+    // Calculate the offset for the current slide
+    slider.style.transform = `translateX(-${index * 100}%)`;
 }
 
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides; // Loop to first slide if at the end
+    currentIndex = (currentIndex + 1) % totalSlides; // Loop back to the start
     showSlide(currentIndex);
 }
 
 function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Loop to last slide if at the beginning
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Loop to the last slide
     showSlide(currentIndex);
 }
 
-// Optional: Automatically go to the next slide every 5 seconds
-setInterval(nextSlide, 5000);
+// Auto-slide every 3 seconds
+setInterval(nextSlide, 8000);
