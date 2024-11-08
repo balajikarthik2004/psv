@@ -164,7 +164,7 @@ header{
   
   .slider {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 2s ease-in-out;
   }
   
   .slide {
@@ -200,34 +200,39 @@ header{
     background-color: rgba(0, 0, 0, 0.8);
   }
 .hr{
-    margin-top: 40px;
-    background: rgb(0, 0, 0);
-    height: 1px;
+   
+    background: rgb(8, 3, 143);
+    height: 6px;
     width: 100%;
 }
-
+section h1{
+    margin-top: 40px;
+    background: #fff;
+}
 
 /* Scrolling Section Styles */
 .scrolling-container {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: #020766;
-    padding: 20px;
+    background-color: #03074f;
+    padding: 20px ;
 }
 
 .dept-header {
     position: absolute;
-    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 16px;
     font-weight: bold;
-    color: #0b0303;
+    color: rgb(208, 135, 0);
     z-index: 10;
-    background-color: white;
+    background-color: #03074f;
     padding: 15px 20px;
     border-radius: 5px;
+}
+.dept-header span{
+    color: white;
 }
 
 .name-scroller {
@@ -238,8 +243,25 @@ header{
     white-space: nowrap;
     position: relative;
     padding-left: 220px; /* Space from the department header */
+}/* Marquee Name Styles */
+
+marquee .name {
+    font-size: 18px;
+    margin-right: 30px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
+/* Responsive adjustments for marquee names */
+@media (max-width: 768px) {
+    marquee .name {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .dept-header h1{
+        font-size: 10px;
+    }
+}
 .name {
     font-size: 18px;
     color: #ffffff;
@@ -255,6 +277,49 @@ header{
         transform: translateX(-50%);
     }
 }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dept-header {
+        font-size: 14px;
+        padding: 8px;
+        left: 5px;
+    }
+
+    .dept-header h1 {
+        font-size: 14px;
+    }
+
+    .dept-header span {
+        font-size: 12px;
+    }
+
+    marquee .name {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dept-header {
+        font-size: 12px;
+        padding: 5px;
+        left: 2px;
+    }
+
+    .dept-header h1 {
+        font-size: 12px;
+    }
+
+    .dept-header span {
+        font-size: 10px;
+    }
+
+    marquee .name {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+}
+
 section{
     text-align: center;
     color: black;
@@ -296,7 +361,6 @@ section p{
     gap: 30px;
     flex-wrap: wrap;
 }
-
 .vision-box, .mission-box {
     display: flex;
     width: 45%;
@@ -332,7 +396,10 @@ section p{
     margin-bottom: 10px;
 }
 
-.content p {
+.content ul {
+    font-family: "Poppins", sans-serif ;
+    text-align: start;
+    font-weight: 600;
     font-size: 16px;
     color: #333;
     line-height: 1.5;
@@ -404,6 +471,91 @@ section p{
     }
 }
 
+/* Contact Section Styles */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.contact-column1 {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.contact-column {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.college-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    font-size: 24px;
+    color: #020766;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #333;
+}
+
+.contact-column{
+    text-align: start;
+}
+.contact-column h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #020766;
+}
+
+.contact-column p {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.contact-column i {
+    color: #e21300e6;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .college-logo {
+        width: 100px;
+    }
+}
+
 /* Footer Styles */
 .footer {
     background-color: #020766;
@@ -414,7 +566,6 @@ section p{
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 40px;
 }
 .footer{
     display: flex;
@@ -431,5 +582,7 @@ section p{
 }
 
 .footer a:hover {
-    text-decoration: underline;
+   color: rgb(0, 128, 255);
+   font-weight: 600;
 }
+
